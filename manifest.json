@@ -1,0 +1,410 @@
+{
+  "package_version": "v01",
+  "prepared_on": "2026-10-30",
+  "status": "public_share_package",
+  "selection_basis": "Current selected cast cross-checked against completed audition and finished-episode records",
+  "role_count": 5,
+  "roles": [
+    {
+      "role": "gpt",
+      "selected_take": "GPT-A",
+      "language": "Chinese Mandarin",
+      "neutral_audition_text": "我们从这一项开始。没事的，我在呢。复制这一段，再把报错贴给我。",
+      "sample": {
+        "filename": "GPT-A.mp3",
+        "bytes": 126381,
+        "duration_seconds": 7.824,
+        "codec": "mp3",
+        "container": "mp3",
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sha256": "aa57bd0188e227f5c61862c5664241c186b6b365e4ca349c2eb4d5fb5a0a573b",
+        "decode_check": "passed"
+      },
+      "generation_reference": {
+        "filename": "GPT-A_raw.mp3",
+        "bytes": 46944,
+        "duration_seconds": 7.824,
+        "codec": "mp3",
+        "container": "mp3",
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sha256": "61eed125193498585522c1c69a81696eae9ff0abdb03ad07ba05d514170d836e",
+        "decode_check": "passed",
+        "included": false
+      },
+      "provider": "Microsoft Edge online speech via edge-tts",
+      "official_character_voice": false,
+      "origin": "vendor_preset_voice_output",
+      "source_url": "https://github.com/rany2/edge-tts",
+      "voice_id": "zh-CN-XiaoxiaoNeural",
+      "settings": {
+        "rate": "-6%",
+        "pitch": "+0Hz",
+        "volume": "+0%",
+        "client": "edge-tts",
+        "client_version": "7.3.1"
+      },
+      "generation_chain": [
+        "Microsoft Edge online speech preset zh-CN-XiaoxiaoNeural",
+        "Saved synthesized MP3",
+        "Listening export loudness normalization"
+      ],
+      "design_prompt": null,
+      "design_prompt_note": "This preset was selected, not created by a VoiceDesign prompt.",
+      "redistribution_status": "audio_withheld_vendor_output_terms_unresolved",
+      "audio_included": false,
+      "reference_note": "Raw file is a vendor-synthesized output, not a user-owned transferable voice source or model.",
+      "shared_with": [
+        "codex"
+      ],
+      "finished_episode_checks": [
+        {
+          "episode": "EP00",
+          "matching_speech_files": 13,
+          "all_listed_audio_hashes_verified": true
+        },
+        {
+          "episode": "EP01",
+          "matching_speech_files": 8,
+          "all_listed_audio_hashes_verified": true
+        }
+      ]
+    },
+    {
+      "role": "claude",
+      "selected_take": "CLAUDE-C",
+      "language": "Chinese Mandarin",
+      "neutral_audition_text": "这里交给我吧。嗯？这个地方，好像还可以再简化一点。",
+      "sample": {
+        "filename": "CLAUDE-C_norm_v02.mp3",
+        "bytes": 101037,
+        "duration_seconds": 6.24,
+        "codec": "mp3",
+        "container": "mp3",
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sha256": "4175fa5ffe551e922cc60000b6eccf8faaa52cd3d4fa7c2ab5b0a27c07150e8f",
+        "decode_check": "passed"
+      },
+      "generation_reference": {
+        "filename": "CLAUDE-C_raw.wav",
+        "bytes": 599120,
+        "duration_seconds": 6.24,
+        "codec": "pcm_f32le",
+        "container": "wav",
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sha256": "930e79f50b175189bc433147dc460f454a3e4fd64579c52ac85109bb648c7fe0",
+        "decode_check": "passed",
+        "included": false
+      },
+      "provider": "Local Qwen3-TTS voice design",
+      "official_character_voice": false,
+      "origin": "original_synthetic_voice_design",
+      "source_url": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "design_model": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "model_revision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
+      "design_prompt": "年轻成年女性的中文普通话声线，二次元日常漫画的可靠姐姐。音区中等，音色清亮温暖，略带柔和气声但不虚弱，咬字清晰自然，从容利落，亲近地给同伴解决问题，微微自信的笑意。第一句温柔而笃定；嗯字短促带一点发现问题的好奇，之后像认真看代码，结尾轻快落下。正常聊天的音量和语速，不是广播腔，不拖长尾音。",
+      "settings": {
+        "seed": 201,
+        "language": "Chinese",
+        "dtype": "bfloat16",
+        "attention": "sdpa",
+        "max_new_tokens": 512
+      },
+      "runtime_versions": {
+        "qwen-tts": "0.1.1",
+        "torch": "2.11.0+cu128",
+        "transformers": "4.57.3",
+        "accelerate": "1.12.0"
+      },
+      "generation_chain": [
+        "Original generic adult-character description + neutral audition text",
+        "Qwen3-TTS VoiceDesign synthesis",
+        "Selected synthetic WAV retained as identity reference",
+        "Selected audition normalized to MP3 for listening",
+        "Finished comic dialogue uses Qwen3-TTS Base conditioned on that same synthetic reference and transcript"
+      ],
+      "continuity_model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "continuity_revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "continuity_settings": {
+        "language": "Chinese",
+        "x_vector_only_mode": false,
+        "dtype": "bfloat16",
+        "attention": "sdpa",
+        "max_new_tokens": 512,
+        "seed": 201
+      },
+      "reference_note": "Original generated synthetic voice; no third-party recording was used. The WAV reference is documented but not bundled in this example-only package.",
+      "redistribution_status": "included_original_synthetic_audition_no_package_wide_license",
+      "audio_included": true,
+      "package_audio": "examples/claude.mp3",
+      "normalization": "two-pass loudnorm target -18 LUFS / -2 dBTP, mono 24 kHz MP3, 128 kb/s, no pitch change or music",
+      "finished_episode_checks": [
+        {
+          "episode": "EP00",
+          "matching_speech_files": 5,
+          "all_listed_audio_hashes_verified": true
+        },
+        {
+          "episode": "EP01",
+          "matching_speech_files": 4,
+          "all_listed_audio_hashes_verified": true
+        }
+      ]
+    },
+    {
+      "role": "grok",
+      "selected_take": "GROK-D",
+      "language": "Chinese Mandarin",
+      "neutral_audition_text": "哦？这次找我，终于是正经事啦？",
+      "sample": {
+        "filename": "GROK-D_norm_v02.mp3",
+        "bytes": 57645,
+        "duration_seconds": 3.52,
+        "codec": "mp3",
+        "container": "mp3",
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sha256": "91917a7c2dbe95d38528cdf431efc511ab67baf348f5c28aa4af8a9200eadbc9",
+        "decode_check": "passed"
+      },
+      "generation_reference": {
+        "filename": "GROK-D_raw.wav",
+        "bytes": 338000,
+        "duration_seconds": 3.52,
+        "codec": "pcm_f32le",
+        "container": "wav",
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sha256": "bdad8a9a6461876f553a85175fb9a83b2fbfa6e27a332ff4cf87af8264b24941",
+        "decode_check": "passed",
+        "included": false
+      },
+      "provider": "Local Qwen3-TTS voice design",
+      "official_character_voice": false,
+      "origin": "original_synthetic_voice_design",
+      "source_url": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "design_model": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "model_revision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
+      "design_prompt": "年轻成年女性的中文普通话，二次元动画里机灵狡黠的吐槽角色。音色清脆而略带一点鼻腔共鸣，中等音高，声音有弹性和明亮锋芒，反应快，有一丝不服管的调皮，像挑起眉毛笑着吐槽老朋友。哦是短促惊讶的上扬，这次找我正常速度，终于两个字稍重，正经事啦带揶揄的笑意自然收尾。自然口语，有节奏，不要播报腔，不要儿童声或尖叫。",
+      "settings": {
+        "seed": 302,
+        "language": "Chinese",
+        "dtype": "bfloat16",
+        "attention": "sdpa",
+        "max_new_tokens": 512
+      },
+      "runtime_versions": {
+        "qwen-tts": "0.1.1",
+        "torch": "2.11.0+cu128",
+        "transformers": "4.57.3",
+        "accelerate": "1.12.0"
+      },
+      "generation_chain": [
+        "Original generic adult-character description + neutral audition text",
+        "Qwen3-TTS VoiceDesign synthesis",
+        "Selected synthetic WAV retained as identity reference",
+        "Selected audition normalized to MP3 for listening",
+        "Finished comic dialogue uses Qwen3-TTS Base conditioned on that same synthetic reference and transcript"
+      ],
+      "continuity_model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "continuity_revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "continuity_settings": {
+        "language": "Chinese",
+        "x_vector_only_mode": false,
+        "dtype": "bfloat16",
+        "attention": "sdpa",
+        "max_new_tokens": 512,
+        "seed": 302
+      },
+      "reference_note": "Original generated synthetic voice; no third-party recording was used. The WAV reference is documented but not bundled in this example-only package.",
+      "redistribution_status": "included_original_synthetic_audition_no_package_wide_license",
+      "audio_included": true,
+      "package_audio": "examples/grok.mp3",
+      "normalization": "two-pass loudnorm target -18 LUFS / -2 dBTP, mono 24 kHz MP3, 128 kb/s, no pitch change or music",
+      "finished_episode_checks": [
+        {
+          "episode": "EP00",
+          "matching_speech_files": 0,
+          "all_listed_audio_hashes_verified": true
+        },
+        {
+          "episode": "EP01",
+          "matching_speech_files": 2,
+          "all_listed_audio_hashes_verified": true
+        }
+      ]
+    },
+    {
+      "role": "gemini",
+      "selected_take": "GEMINI-D",
+      "language": "Chinese Mandarin",
+      "neutral_audition_text": "我可以坐在DeepSeek旁边吗？我会认真工作的。",
+      "sample": {
+        "filename": "GEMINI-D_norm_v02.mp3",
+        "bytes": 81837,
+        "duration_seconds": 5.04,
+        "codec": "mp3",
+        "container": "mp3",
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sha256": "333b7fd8f1d4f5bbe7225c17ca52c546d9d438ec9bb64fa1bbfd1b02f8e5ea28",
+        "decode_check": "passed"
+      },
+      "generation_reference": {
+        "filename": "GEMINI-D_raw.wav",
+        "bytes": 483920,
+        "duration_seconds": 5.04,
+        "codec": "pcm_f32le",
+        "container": "wav",
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sha256": "49c1c34f4067f89ff9e49a429280bac33f288043dd581818068904474f393a67",
+        "decode_check": "passed",
+        "included": false
+      },
+      "provider": "Local Qwen3-TTS voice design",
+      "official_character_voice": false,
+      "origin": "original_synthetic_voice_design",
+      "source_url": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "design_model": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "model_revision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
+      "design_prompt": "年轻成年女性的中文普通话，可爱日常动画里的温软猫娘。音色柔软蓬松，圆润，中等偏高音区，略带温柔鼻音和气息，不尖锐，不是婴幼儿声音。轻声和熟人说话，节奏稍慢，像想靠着朋友一起工作，带一点害羞和依赖，前句小心又期待，DeepSeek按自然英文名字读，后句乖巧地认真保证，有轻轻的笑意。发音仍清楚，不要拖尾，不加喵，不加台词，不要播音腔。",
+      "settings": {
+        "seed": 402,
+        "language": "Chinese",
+        "dtype": "bfloat16",
+        "attention": "sdpa",
+        "max_new_tokens": 512
+      },
+      "runtime_versions": {
+        "qwen-tts": "0.1.1",
+        "torch": "2.11.0+cu128",
+        "transformers": "4.57.3",
+        "accelerate": "1.12.0"
+      },
+      "generation_chain": [
+        "Original generic adult-character description + neutral audition text",
+        "Qwen3-TTS VoiceDesign synthesis",
+        "Selected synthetic WAV retained as identity reference",
+        "Selected audition normalized to MP3 for listening",
+        "Finished comic dialogue uses Qwen3-TTS Base conditioned on that same synthetic reference and transcript"
+      ],
+      "continuity_model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "continuity_revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "continuity_settings": {
+        "language": "Chinese",
+        "x_vector_only_mode": false,
+        "dtype": "bfloat16",
+        "attention": "sdpa",
+        "max_new_tokens": 512,
+        "seed": 402
+      },
+      "reference_note": "Original generated synthetic voice; no third-party recording was used. The WAV reference is documented but not bundled in this example-only package.",
+      "redistribution_status": "included_original_synthetic_audition_no_package_wide_license",
+      "audio_included": true,
+      "package_audio": "examples/gemini.mp3",
+      "normalization": "two-pass loudnorm target -18 LUFS / -2 dBTP, mono 24 kHz MP3, 128 kb/s, no pitch change or music",
+      "finished_episode_checks": [
+        {
+          "episode": "EP00",
+          "matching_speech_files": 0,
+          "all_listed_audio_hashes_verified": true
+        },
+        {
+          "episode": "EP01",
+          "matching_speech_files": 2,
+          "all_listed_audio_hashes_verified": true
+        }
+      ]
+    },
+    {
+      "role": "deepseek",
+      "selected_take": "DEEPSEEK-C",
+      "language": "Chinese Mandarin",
+      "neutral_audition_text": "工作可以。先说好，白饭管够吗？",
+      "sample": {
+        "filename": "DEEPSEEK-C.mp3",
+        "bytes": 63405,
+        "duration_seconds": 3.88,
+        "codec": "mp3",
+        "container": "mp3",
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sha256": "8da94ddd1b6af5a9dc2f3377861d382e83c0f628d87ddff74165e66a5b4fe2c2",
+        "decode_check": "passed"
+      },
+      "generation_reference": {
+        "filename": "native.wav",
+        "bytes": 372560,
+        "duration_seconds": 3.88,
+        "codec": "pcm_f32le",
+        "container": "wav",
+        "sample_rate_hz": 24000,
+        "channels": 1,
+        "sha256": "b185f428afd69ad1e68d8b3371f061191adc8786c6412bab769d7deecd8f99bc",
+        "decode_check": "passed",
+        "included": false
+      },
+      "provider": "Local FeiyuVoice-CosyVoice3",
+      "official_character_voice": false,
+      "origin": "output_from_third_party_character_voice_model",
+      "source_url": "https://huggingface.co/Esmerubphire/FeiyuVoice-CosyVoice3",
+      "model_revision": "f37e9d1dda26e8b45b4e9f1b4c347c0a07b797e2",
+      "checkpoint_sha256": "31a87a0f83ae9987285e115dd0d2048a0f52db44fa40d48e8da1cfefea12affc",
+      "settings": {
+        "style": "cute",
+        "mode": "zero_shot",
+        "seed": 42,
+        "speed": 1.0,
+        "fp16": false,
+        "stream": false,
+        "prompt_prefix": "You are a helpful assistant.<|endofprompt|>",
+        "precision": "float32",
+        "backend": "cuda"
+      },
+      "generation_chain": [
+        "FeiyuVoice-CosyVoice3 1.0.1 cute F6_0040 character checkpoint and bundled reference",
+        "CosyVoice3 zero-shot synthesis",
+        "Generated native WAV",
+        "Normalized MP3 listening export"
+      ],
+      "design_prompt": null,
+      "design_prompt_note": "Uses an existing character model and its reference; no original VoiceDesign prompt is claimed.",
+      "redistribution_status": "audio_and_reference_withheld_character_and_contributed_asset_rights_unresolved",
+      "audio_included": false,
+      "reference_note": "Listed native WAV is generated output, not the model's bundled conditioning reference. Bundled third-party reference and model weights are excluded.",
+      "attribution_url": "https://github.com/Esmerubphire/astrbot_plugin_feiyu_voice/blob/main/COPYRIGHT.md",
+      "finished_episode_checks": [
+        {
+          "episode": "EP00",
+          "matching_speech_files": 0,
+          "all_listed_audio_hashes_verified": true
+        },
+        {
+          "episode": "EP01",
+          "matching_speech_files": 2,
+          "all_listed_audio_hashes_verified": true
+        }
+      ]
+    }
+  ],
+  "scope": "Five source/settings records; three short original synthetic audition examples",
+  "excluded": [
+    "WHITE nonverbal effects",
+    "a separate Codex voice",
+    "unselected takes",
+    "GPT and DeepSeek audio pending rights verification",
+    "all model weights",
+    "third-party reference recordings",
+    "raw synthetic reference WAVs",
+    "full-episode dialogue/audio/video",
+    "local absolute paths",
+    "account data",
+    "raw requests/results/logs"
+  ],
+  "licensing": "No package-wide reuse or commercial license granted. Upstream model/code licenses do not automatically determine output, character or bundled-asset redistribution rights.",
+  "reproducibility": "Settings preserve provenance. Seeds alone do not guarantee identical waveforms across runtime/hardware; exact selected synthetic references are needed for identity continuity."
+}

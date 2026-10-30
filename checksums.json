@@ -1,0 +1,65 @@
+{
+  "algorithm": "sha256",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 39,
+      "sha256": "1ac1a5f38ce6d70e03feeaee559a6a1e224feea38ebe0a969511c1527241915c"
+    },
+    {
+      "path": "examples/claude.mp3",
+      "bytes": 101037,
+      "sha256": "4175fa5ffe551e922cc60000b6eccf8faaa52cd3d4fa7c2ab5b0a27c07150e8f"
+    },
+    {
+      "path": "examples/gemini.mp3",
+      "bytes": 81837,
+      "sha256": "333b7fd8f1d4f5bbe7225c17ca52c546d9d438ec9bb64fa1bbfd1b02f8e5ea28"
+    },
+    {
+      "path": "examples/grok.mp3",
+      "bytes": 57645,
+      "sha256": "91917a7c2dbe95d38528cdf431efc511ab67baf348f5c28aa4af8a9200eadbc9"
+    },
+    {
+      "path": "manifest.json",
+      "bytes": 17629,
+      "sha256": "4b82d2f4ea2306f3b52ef4c31e450a2a1644a05338213d7869458f410d9de70d"
+    },
+    {
+      "path": "prompts/claude.json",
+      "bytes": 1199,
+      "sha256": "8171ac98affeaad40625857dd85eac22c419ad69a92e46a97e30d83338c545c3"
+    },
+    {
+      "path": "prompts/deepseek.json",
+      "bytes": 727,
+      "sha256": "d0af6a1eba6c2b1dfdf83dcc65360ddba9e47fa3b32b57165a94021dfe299294"
+    },
+    {
+      "path": "prompts/gemini.json",
+      "bytes": 1230,
+      "sha256": "55ab54500b878ce064ffa069adb93b946c491408c3e66c51f69cf49c5b8939ce"
+    },
+    {
+      "path": "prompts/gpt.json",
+      "bytes": 564,
+      "sha256": "a2f8f0a6f7384a88d831e0fb5ddf33b7c4a2c816e00b7221e0032f8d5841751c"
+    },
+    {
+      "path": "prompts/grok.json",
+      "bytes": 1186,
+      "sha256": "cf0d5c1784b3f58eaa7deabd3f4b2aad248201c4413b4a070e9a0ab0514a743e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3663,
+      "sha256": "8b428810fd471bf4890097002513bb091f0ca32f0b88d08d409283bba53be960"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 2980,
+      "sha256": "8cd039c1f8fdacb88027c839c11a908618b8c5539c2d6ae57da1810b00465493"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "role": "deepseek",
+  "selected_take": "DEEPSEEK-C",
+  "neutral_audition_text": "工作可以。先说好，白饭管够吗？",
+  "origin": "output_from_third_party_character_voice_model",
+  "design_prompt": null,
+  "settings": {
+    "style": "cute",
+    "mode": "zero_shot",
+    "seed": 42,
+    "speed": 1.0,
+    "fp16": false,
+    "stream": false,
+    "prompt_prefix": "You are a helpful assistant.<|endofprompt|>",
+    "precision": "float32",
+    "backend": "cuda"
+  },
+  "generation_chain": [
+    "FeiyuVoice-CosyVoice3 1.0.1 cute F6_0040 character checkpoint and bundled reference",
+    "CosyVoice3 zero-shot synthesis",
+    "Generated native WAV",
+    "Normalized MP3 listening export"
+  ]
+}

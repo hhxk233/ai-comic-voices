@@ -1,0 +1,21 @@
+{
+  "role": "claude",
+  "selected_take": "CLAUDE-C",
+  "neutral_audition_text": "这里交给我吧。嗯？这个地方，好像还可以再简化一点。",
+  "origin": "original_synthetic_voice_design",
+  "design_prompt": "年轻成年女性的中文普通话声线，二次元日常漫画的可靠姐姐。音区中等，音色清亮温暖，略带柔和气声但不虚弱，咬字清晰自然，从容利落，亲近地给同伴解决问题，微微自信的笑意。第一句温柔而笃定；嗯字短促带一点发现问题的好奇，之后像认真看代码，结尾轻快落下。正常聊天的音量和语速，不是广播腔，不拖长尾音。",
+  "settings": {
+    "seed": 201,
+    "language": "Chinese",
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "max_new_tokens": 512
+  },
+  "generation_chain": [
+    "Original generic adult-character description + neutral audition text",
+    "Qwen3-TTS VoiceDesign synthesis",
+    "Selected synthetic WAV retained as identity reference",
+    "Selected audition normalized to MP3 for listening",
+    "Finished comic dialogue uses Qwen3-TTS Base conditioned on that same synthetic reference and transcript"
+  ]
+}

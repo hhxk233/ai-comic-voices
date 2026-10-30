@@ -1,0 +1,21 @@
+{
+  "role": "grok",
+  "selected_take": "GROK-D",
+  "neutral_audition_text": "哦？这次找我，终于是正经事啦？",
+  "origin": "original_synthetic_voice_design",
+  "design_prompt": "年轻成年女性的中文普通话，二次元动画里机灵狡黠的吐槽角色。音色清脆而略带一点鼻腔共鸣，中等音高，声音有弹性和明亮锋芒，反应快，有一丝不服管的调皮，像挑起眉毛笑着吐槽老朋友。哦是短促惊讶的上扬，这次找我正常速度，终于两个字稍重，正经事啦带揶揄的笑意自然收尾。自然口语，有节奏，不要播报腔，不要儿童声或尖叫。",
+  "settings": {
+    "seed": 302,
+    "language": "Chinese",
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "max_new_tokens": 512
+  },
+  "generation_chain": [
+    "Original generic adult-character description + neutral audition text",
+    "Qwen3-TTS VoiceDesign synthesis",
+    "Selected synthetic WAV retained as identity reference",
+    "Selected audition normalized to MP3 for listening",
+    "Finished comic dialogue uses Qwen3-TTS Base conditioned on that same synthetic reference and transcript"
+  ]
+}

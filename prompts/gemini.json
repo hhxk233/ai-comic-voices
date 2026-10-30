@@ -1,0 +1,21 @@
+{
+  "role": "gemini",
+  "selected_take": "GEMINI-D",
+  "neutral_audition_text": "我可以坐在DeepSeek旁边吗？我会认真工作的。",
+  "origin": "original_synthetic_voice_design",
+  "design_prompt": "年轻成年女性的中文普通话，可爱日常动画里的温软猫娘。音色柔软蓬松，圆润，中等偏高音区，略带温柔鼻音和气息，不尖锐，不是婴幼儿声音。轻声和熟人说话，节奏稍慢，像想靠着朋友一起工作，带一点害羞和依赖，前句小心又期待，DeepSeek按自然英文名字读，后句乖巧地认真保证，有轻轻的笑意。发音仍清楚，不要拖尾，不加喵，不加台词，不要播音腔。",
+  "settings": {
+    "seed": 402,
+    "language": "Chinese",
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "max_new_tokens": 512
+  },
+  "generation_chain": [
+    "Original generic adult-character description + neutral audition text",
+    "Qwen3-TTS VoiceDesign synthesis",
+    "Selected synthetic WAV retained as identity reference",
+    "Selected audition normalized to MP3 for listening",
+    "Finished comic dialogue uses Qwen3-TTS Base conditioned on that same synthetic reference and transcript"
+  ]
+}
